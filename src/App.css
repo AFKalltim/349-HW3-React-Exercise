@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #273544;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    font-size: 55px;
+    color: white;
+    margin: 60px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.searchAndSort {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C3F54;
+    padding: 25px;
+    gap: 15px;
 }
-
-.App-link {
-  color: #61dafb;
+input {
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input::placeholder {
+    font-size: 20px;
+}
+select {
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+.movieGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    background-color: #F2F2F2;
+    padding: 20px;
+    gap: 30px;
+}
+.movieCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #FEFEFE;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.movieCard img {
+    border-radius: 10px;
+    width: 280px;
+}
+.movieCard h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.movieCard p {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+.pagination {
+    display: flex;
+    background-color: #F2F2F2;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #2F8CD4;
+    font-size: 22px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #2473AE;
+}
+#pageNumber {
+    font-size: 22px;
 }
